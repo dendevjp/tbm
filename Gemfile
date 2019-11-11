@@ -30,6 +30,16 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem 'rails-i18n'
+gem 'bcrypt',         '3.1.12'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'bootstrap-sass',          '3.3.7'
+gem 'jquery-rails',            '4.3.1'
+gem 'paranoia'                 
+gem "select2-rails"
+
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
