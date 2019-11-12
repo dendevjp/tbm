@@ -1,12 +1,12 @@
 User.create!(
-uid:  "Example001",
+uid:  "tian22",
 name:  "Example User",
 division: "Developement",
 team: "Team1",
 admin: "1",
 email: "example@railstutorial.org",
-password:              "foobar",
-password_confirmation: "foobar")
+password:              "tianqian",
+password_confirmation: "tianqian")
 
 99.times do |n|
   uid  = "uid#{n+1}"
