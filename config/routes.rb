@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
   resources :users
+  resources :rconfigs
   get  '/adduser',  to: 'users#new'
   root 'static_pages#home'
   get  'static_pages/home'

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rnumber: MyString
+  rtitle: MyString
+  rdetail: MyString
+  rdivision: MyString
+  rcharge: MyString
+  rdate: 2019-11-13 23:29:10
+  rstatus: MyString
+
+two:
+  rnumber: MyString
+  rtitle: MyString
+  rdetail: MyString
+  rdivision: MyString
+  rcharge: MyString
+  rdate: 2019-11-13 23:29:10
+  rstatus: MyString

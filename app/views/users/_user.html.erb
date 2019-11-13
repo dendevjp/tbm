@@ -1,7 +1,12 @@
-    <li>
-      <%= link_to user.uid + '-' + user.name, user %>
-      <% if current_user.admin == "1" && !current_user?(user) %>
-    | <%= link_to "delete", user, method: :delete,
+<tr>
+<td><%= link_to user.uid, user %></td>
+<td><%= link_to user.name, user %></td>
+<td><%= link_to user.division, user %></td>
+<td><%= link_to user.team, user %></td>
+<td>
+ <% if current_user.admin == "1" && !current_user?(user) %>
+     <%= link_to "削除", user, method: :delete,
                                   data: { confirm: "削除しますか?" } %>
   <% end %>
-    </li>
+</td>
+</tr>

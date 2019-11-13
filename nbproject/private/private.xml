@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/layouts/_footer.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/user.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/new.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/config/routes.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/_form.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/shared/_rconfig_error_messages.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/index.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/rconfig.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/helpers/users_helper.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/users_controller.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/rconfigs_controller.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/layouts/_header.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/sessions/new.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/rconfig.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/edit.html.erb</file>
+        </group>
+    </open-files>
 </project-private>

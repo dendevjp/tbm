@@ -1,0 +1,2 @@
+class Rcase < ApplicationRecord
+end

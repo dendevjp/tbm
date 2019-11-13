@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_12_143211) do
+ActiveRecord::Schema.define(version: 2019_11_13_143257) do
+
+  create_table "rcases", force: :cascade do |t|
+    t.string "rnumber"
+    t.string "rtitle"
+    t.string "rdetail"
+    t.string "rdivision"
+    t.string "rcharge"
+    t.datetime "rdate"
+    t.string "rstatus"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rconfigs", force: :cascade do |t|
+    t.string "maincode"
+    t.string "subcode"
+    t.string "title"
+    t.string "description"
+    t.string "deleteflg"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "uid"

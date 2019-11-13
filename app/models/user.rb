@@ -30,6 +30,14 @@ class User < ApplicationRecord
     update_attribute(:remember_digest, User.digest(remember_token))
   end
 
+  def self.search(search) #self.でクラスメソッドとしている
+    if search # Controllerから渡されたパラメータが!= nilの場合は、titleカラムを部分一致検索
+      User.where(['name LIKE ?', "%#{search}%"])
+    else
+      User.all #全て表示。
+    end
+  end
+
   # 渡されたトークンがダイジェストと一致したらtrueを返す
   def authenticated?(remember_token)
     return false if remember_digest.nil?

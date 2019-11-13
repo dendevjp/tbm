@@ -1,0 +1,21 @@
+    <%= form_for(@rconfig) do |f| %>
+      <%= render 'shared/rconfig_error_messages' %>
+
+      <%= f.label :メインコード %>
+      <%= f.text_field :maincode , class: 'form-control'%>
+
+      <%= f.label :サブコード %>
+      <%= f.text_field :subcode, class: 'form-control' %>
+
+      <%= f.label :タイトル %>
+      <%= f.email_field :title , class: 'form-control'%>
+
+      <%= f.label :説明 %>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.label :表示FLG %>
+      <%= f.select :deleteflg, [["表示", "表示"], ["非表示", "非表示"]],  {prompt: "選択してください"}, {class: 'form-control form-control-lg'} %>
+
+      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+    <% end %>
+  </div>

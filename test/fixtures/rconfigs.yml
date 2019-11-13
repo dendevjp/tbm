@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  maincode: MyString
+  subcode: MyString
+  title: MyString
+  description: MyString
+  deleteflg: MyString
+
+two:
+  maincode: MyString
+  subcode: MyString
+  title: MyString
+  description: MyString
+  deleteflg: MyString

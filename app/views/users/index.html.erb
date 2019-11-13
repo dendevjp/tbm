@@ -1,10 +1,21 @@
 <% provide(:title, 'ユーザ一覧') %>
-<h1>All users</h1>
+<h1>ユーザー一覧と削除</h1>
 
-<%= will_paginate %>
+<%= form_tag users_path, :method => 'get' do %>
+  <p>
+    <table>
+<tr>
+<td><%= text_field_tag :search, params[:search], placeholder: "ユーザー名前を入力する",class: "col-2 bg-danger h-50"  %></td>
+<td><%= submit_tag "検索", class: "col-2 bg-primary h-50" %></td>
+</tr>
+    </table>
+    
+    
+  </p>
+<% end %>
 
-<ul class="users">
+<table class="table table-striped">
+  <tr><th>ユーザーID</th><th>ユーザー名前</th><th>部門</th><th>チーム</th><th>削除</th></tr>
     <%= render @users %>
-</ul>
+</table>
 
-<%= will_paginate %>
