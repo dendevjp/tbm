@@ -17,7 +17,7 @@ class RconfigsController < ApplicationController
     @rconfig = Rconfig.new(rconfig_params)
     if @rconfig.save
       flash[:success] = "登録成功"
-      redirect_to @rconfig
+      redirect_to rconfigs_path
     else
       render 'new'
     end
@@ -31,7 +31,7 @@ class RconfigsController < ApplicationController
     @rconfig = Rconfig.find(params[:id])
     if @rconfig.update_attributes(rconfig_params)
       flash[:success] = "保存成功しました。"
-      redirect_to @rconfig
+      redirect_to(rconfigs_path)
     else
       render 'edit'
     end
@@ -39,7 +39,7 @@ class RconfigsController < ApplicationController
 
   private
 
-    def user_params
+    def rconfig_params
       params.require(:rconfig).permit(:maincode, :subcode, :title, :description, :deleteflg)
     end
 

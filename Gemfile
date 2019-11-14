@@ -39,8 +39,6 @@ gem 'paranoia'
 gem 'select2-rails'
 gem 'faker'
 
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

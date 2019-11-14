@@ -8,14 +8,16 @@
       <%= f.text_field :subcode, class: 'form-control' %>
 
       <%= f.label :タイトル %>
-      <%= f.email_field :title , class: 'form-control'%>
+      <%= f.text_field :title , class: 'form-control'%>
 
       <%= f.label :説明 %>
       <%= f.text_field :description, class: 'form-control' %>
 
       <%= f.label :表示FLG %>
       <%= f.select :deleteflg, [["表示", "表示"], ["非表示", "非表示"]],  {prompt: "選択してください"}, {class: 'form-control form-control-lg'} %>
-
-      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+      <br>
+      <%= f.submit yield(:button_text), class: "btn btn-lg btn-primary" %>
+      <br><br>
+      <%= link_to "戻る", rconfigs_path, class: "btn btn-lg btn-primary btn-block" %>
     <% end %>
   </div>

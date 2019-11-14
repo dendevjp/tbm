@@ -1,8 +1,8 @@
 <tr>
-<td><%= link_to user.uid, user %></td>
-<td><%= link_to user.name, user %></td>
-<td><%= link_to user.division, user %></td>
-<td><%= link_to user.team, user %></td>
+<td><%= user.uid %></td>
+<td><%= user.name %></td>
+<td><%= user.division %></td>
+<td><%= user.team %></td>
 <td>
  <% if current_user.admin == "1" && !current_user?(user) %>
      <%= link_to "削除", user, method: :delete,
