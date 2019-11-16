@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_13_143257) do
+ActiveRecord::Schema.define(version: 2019_11_15_132722) do
 
   create_table "rcases", force: :cascade do |t|
     t.string "rnumber"
@@ -30,6 +30,35 @@ ActiveRecord::Schema.define(version: 2019_11_13_143257) do
     t.string "title"
     t.string "description"
     t.string "deleteflg"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "systemfailures", force: :cascade do |t|
+    t.string "systemfailure_number"
+    t.string "subsystem_name"
+    t.string "time"
+    t.datetime "occur_date"
+    t.string "title"
+    t.string "department"
+    t.string "reporter"
+    t.datetime "update_deadline"
+    t.datetime "confirm_deadline"
+    t.string "signal"
+    t.string "status"
+    t.string "hayakawa_comment"
+    t.string "chargecomment"
+    t.string "exchange_status"
+    t.string "hayakawa_show"
+    t.string "report_path"
+    t.string "followup"
+    t.string "evidence_update"
+    t.string "overall_check"
+    t.string "quality_status"
+    t.string "occurrence_year"
+    t.string "occurrence_month"
+    t.datetime "permanent_planday"
+    t.datetime "recurrence_Preventday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

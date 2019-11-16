@@ -196,7 +196,16 @@ aside {
   margin: 0;
   li {
     overflow: auto;
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+.ul_left {
+    list-style-type: none;
+}
+
+.sampleTable {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border:1;
 }

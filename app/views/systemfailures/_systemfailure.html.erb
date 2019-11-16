@@ -1,0 +1,28 @@
+<tr>
+<td><%= systemfailure.systemfailure_number %></td>
+<td><%= systemfailure.subsystem_name %></td>
+<td><%= systemfailure.time %></td>
+<td><%= systemfailure.occur_date.strftime('%Y/%m/%d') %></td>
+<td><%= systemfailure.title %></td>
+<td><%= systemfailure.department %></td>
+<td><%= systemfailure.reporter %></td>
+<td><%= systemfailure.update_deadline.strftime('%Y/%m/%d') %></td>
+<td><%= systemfailure.confirm_deadline.strftime('%Y/%m/%d') %></td>
+<td><%= ((Date.today - Date.parse(systemfailure.occur_date.to_s)).to_i).to_s + "日" %></td>
+
+<td><%= systemfailure.signal %></td>
+<td><%= systemfailure.status %></td>
+<td><%= systemfailure.hayakawa_comment %></td>
+<td><%= systemfailure.chargecomment %></td>
+<td><%= systemfailure.exchange_status %></td>
+<td><%= systemfailure.hayakawa_show %></td>
+<td><%= systemfailure.report_path %></td>
+<td><%= systemfailure.followup %></td>
+<td><%= systemfailure.evidence_update %></td>
+<td><%= systemfailure.overall_check %></td>
+<td><%= systemfailure.quality_status %></td>
+<td><%= systemfailure.occurrence_year + "/" + systemfailure.occurrence_month %></td>
+<td><%= systemfailure.permanent_planday.strftime('%Y/%m/%d') %></td>
+<td><%= systemfailure.recurrence_Preventday.strftime('%Y/%m/%d') %></td>
+<td><%= link_to "更新", edit_systemfailure_path(systemfailure), class: "btn btn-primary btn-xs"%></td>
+</tr>

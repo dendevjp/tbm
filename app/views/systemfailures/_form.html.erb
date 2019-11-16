@@ -1,0 +1,75 @@
+    <%= form_for(@systemfailure) do |f| %>
+      <%= render 'shared/systemfailure_error_messages' %>
+
+      <%= f.label :障害番号 %>
+      <%= f.text_field :systemfailure_number , class: 'form-control',disabled: true%>
+
+      <%= f.label :サブシステム %>
+      <%= f.text_field :subsystem_name, class: 'form-control' ,disabled: true%>
+
+      <%= f.label :時点 %>
+      <%= f.text_field :time , class: 'form-control'%>
+
+      <%= f.label :発生日時 %>
+      <%= f.text_field :occur_date, class: 'form-control' %>
+
+      <%= f.label :表題 %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :部署 %>
+      <%= f.text_field :department, class: 'form-control' %>
+
+      <%= f.label :報告者 %>
+      <%= f.text_field :reporter, class: 'form-control' %>
+
+      <%= f.label :記入期限 %>
+      <%= f.text_field :update_deadline, class: 'form-control' %>
+
+      <%= f.label :確定期限 %>
+      <%= f.text_field :confirm_deadline, class: 'form-control' %>
+
+      <%= f.label :シグナル %>
+      <%= f.text_field :signal, class: 'form-control' %>
+
+      <%= f.label :ステータス %>
+      <%= f.text_field :status, class: 'form-control' %>
+
+      <%= f.label :早川さんコメント欄 %>
+      <%= f.text_field :hayakawa_comment, class: 'form-control' %>
+
+      <%= f.label :担当コメント欄 %>
+      <%= f.text_field :chargecomment, class: 'form-control' %>
+
+      <%= f.label :やりとりステータス %>
+      <%= f.text_field :exchange_status, class: 'form-control' %>
+
+      <%= f.label :早川さんにご覧いただき %>
+      <%= f.text_field :hayakawa_show, class: 'form-control' %>
+
+      <%= f.label :報告書保存先 %>
+      <%= f.text_field :report_path, class: 'form-control' %>
+
+      <%= f.label :フォローアップ欄 %>
+      <%= f.text_field :followup, class: 'form-control' %>
+
+      <%= f.label :エビデンス提出 %>
+      <%= f.text_field :evidence_update, class: 'form-control' %>
+
+      <%= f.label :その他全体チェック %>
+      <%= f.text_field :overall_check, class: 'form-control' %>
+
+      <%= f.label :品質管理用ステータス %>
+      <%= f.text_field :quality_status, class: 'form-control' %>
+
+      <%= f.label :恒久実施予定日 %>
+      <%= f.text_field :permanent_planday, class: 'form-control' %>
+
+      <%= f.label :再発防止予定日 %>
+      <%= f.text_field :recurrence_Preventday, class: 'form-control' %>
+
+      <br>
+      <%= f.submit yield(:button_text), class: "btn btn-lg btn-primary" %>
+      <br><br>
+      <%= link_to "戻る", systemfailures_path, class: "btn btn-lg btn-primary btn-block" %>
+    <% end %>
+  </div>

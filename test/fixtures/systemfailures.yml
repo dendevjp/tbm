@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  systemfailure_number: MyString
+  subsystem_name: MyString
+  time: MyString
+  occur_date: 2019-11-15 22:27:22
+  title: MyString
+  department: MyString
+  reporter: MyString
+  update_deadline: 2019-11-15 22:27:22
+  confirm_deadline: 2019-11-15 22:27:22
+  signal: MyString
+  status: MyString
+  hayakawa_comment: MyString
+  chargecomment: MyString
+  exchange_status: MyString
+  hayakawa_show: MyString
+  report_path: MyString
+  followup: MyString
+  evidence_update: MyString
+  overall_check: MyString
+  quality_status: MyString
+  occurrence_year: MyString
+  occurrence_month: MyString
+  permanent_planday: 2019-11-15 22:27:22
+  recurrence_Preventday: 2019-11-15 22:27:22
+
+two:
+  systemfailure_number: MyString
+  subsystem_name: MyString
+  time: MyString
+  occur_date: 2019-11-15 22:27:22
+  title: MyString
+  department: MyString
+  reporter: MyString
+  update_deadline: 2019-11-15 22:27:22
+  confirm_deadline: 2019-11-15 22:27:22
+  signal: MyString
+  status: MyString
+  hayakawa_comment: MyString
+  chargecomment: MyString
+  exchange_status: MyString
+  hayakawa_show: MyString
+  report_path: MyString
+  followup: MyString
+  evidence_update: MyString
+  overall_check: MyString
+  quality_status: MyString
+  occurrence_year: MyString
+  occurrence_month: MyString
+  permanent_planday: 2019-11-15 22:27:22
+  recurrence_Preventday: 2019-11-15 22:27:22

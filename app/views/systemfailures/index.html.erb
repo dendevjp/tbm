@@ -1,0 +1,44 @@
+<% provide(:title, 'Config管理') %>
+<h1>Config管理</h1>
+
+<%= form_tag systemfailures_path, :method => 'get' do %>
+<table class="sampleTable">
+<tr><td colspan="2">
+  <p>
+    <table>
+<tr valign = "middle">
+<td><%= text_field_tag :search, params[:search], placeholder: "タイトルを入力する",class: "form-control"  %></td>
+<td><%= submit_tag "検索", class: "btn btn-primary btn-sm" %></td>
+<td>&emsp;</td>
+<td><%= link_to "新規作成", new_systemfailure_path, class: "btn btn-primary btn-sm"  %></td>
+</tr>
+    </table>
+    
+    
+  </p>
+<% end %>
+</td></tr>
+<tr>
+<td align="left" valign="top" >
+<div style="width:150px; overflow-x:scroll;">
+   <ul class="ul_left">
+     <li><%= check_box "EClist", "Amazon", {:checked => "checked"} %>Amazon</li>
+     <li><%= check_box "EClist", "Yahoo", {:checked => "checked"} %>Yahoo</li>
+     <li><%= check_box "EClist", "Rakuten", {:checked => "checked"} %>楽天</li>
+   </ul>
+</div>
+</td>
+<td>
+<div style="width:100%; overflow-x:scroll;">
+<table class="table table-bordered">
+<tr>
+<th>障害番号</th><th>サブシステム</th><th>時点</th><th>発生日時</th><th>表題</th><th>部署</th>
+<th>報告者</th><th>記入期限</th><th>確定期限</th><th>経過日数</th><th>シグナル</th><th>ステータス</th>
+<th>早川さんコメント欄</th><th>担当コメント欄</th><th>やりとりステータス</th><th>早川さんにご覧いただき</th><th>報告書保存先</th><th>フォローアップ欄</th>
+<th>エビデンス提出</th><th>その他全体チェック</th><th>品質管理用ステータス</th><th>発生年月</th><th>恒久実施予定日</th><th>再発防止予定日</th><th>更新</th>
+</tr>
+    <%= render @systemfailures %>
+</table>
+</div>
+</td></tr></table>
+
