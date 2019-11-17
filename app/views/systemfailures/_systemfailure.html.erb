@@ -1,4 +1,6 @@
 <tr>
+
+<td><%= link_to "更新", edit_systemfailure_path(systemfailure), class: "btn btn-primary btn-xs"%></td>
 <td><%= systemfailure.systemfailure_number %></td>
 <td><%= systemfailure.subsystem_name %></td>
 <td><%= systemfailure.time %></td>
@@ -24,5 +26,5 @@
 <td><%= systemfailure.occurrence_year + "/" + systemfailure.occurrence_month %></td>
 <td><%= systemfailure.permanent_planday.strftime('%Y/%m/%d') %></td>
 <td><%= systemfailure.recurrence_Preventday.strftime('%Y/%m/%d') %></td>
-<td><%= link_to "更新", edit_systemfailure_path(systemfailure), class: "btn btn-primary btn-xs"%></td>
+
 </tr>

@@ -37,9 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -200,12 +200,22 @@ aside {
     border-bottom: 1px solid $gray-lighter;
   }
 }
-.ul_left {
+
+.mycheckbox {
+    li {
     list-style-type: none;
+  }
 }
 
 .sampleTable {
     border-collapse: collapse;
     table-layout: fixed;
     border:1;
+}
+
+.pjbox{
+    border: solid 2px orange;
+    background: lemonchiffon;
+    overflow-x: scroll;
+    width:100%;
 }

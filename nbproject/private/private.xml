@@ -3,32 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/user.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/stylesheets/jquery.dataTables.min.css</file>
             <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/index.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/static_pages/home.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/_form.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/index.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/stylesheets/custom.scss</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/users_controller.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/rconfigs_controller.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/_form.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/layouts/_header.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/new.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/sessions/new.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/edit.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/layouts/_footer.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/new.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/show.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/_rconfig.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/config/routes.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/shared/_rconfig_error_messages.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/rconfig.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/helpers/users_helper.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/Gemfile</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/stylesheets/sessions.scss</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/_user.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/sessions_controller.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/rconfigs/edit.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/index.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/systemfailures_controller.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/javascripts/jquery.dataTables.min.js</file>
         </group>
     </open-files>
 </project-private>
