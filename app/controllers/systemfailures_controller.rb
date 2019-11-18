@@ -2,7 +2,8 @@ class SystemfailuresController < ApplicationController
   before_action :admin_user, only: [:index, :edit, :update]
   
   def index
-    @systemfailures = Systemfailure.search(params[:search])
+    @systemfailures = Systemfailure.search(params[:selectuser])
+    @users = User.all
   end
 
   def show
@@ -15,9 +16,14 @@ class SystemfailuresController < ApplicationController
 
   def create
     @systemfailure = Systemfailure.new(params[:id])
+    @systemfailureshistory = Systemfailureshistory.new(params[:id])
     if @systemfailure.save
+      if @systemfailureshistory.save
+        flash[:success] = "登録成功しました。"
+      else
+        flash[:success] = "登録が成功しました。※履歴登録が失敗しました。"
+      end
       log_in @systemfailure
-      flash[:success] = "登録成功"
       redirect_to @systemfailure
     else
       render 'new'
@@ -31,7 +37,12 @@ class SystemfailuresController < ApplicationController
   def update
     @systemfailure = Systemfailure.find(params[:id])
     if @systemfailure.update_attributes(systemfailure_params)
-      flash[:success] = "保存成功しました。"
+      @systemfailureshistory = Systemfailureshistory.new(params[:id])
+      if systemfailureshistory.save
+        flash[:success] = "保存成功しました。"
+      else
+        flash[:success] = "保存成功しました。※履歴登録が失敗しました。"
+      end
       redirect_to systemfailures_path
     else
       render 'edit'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_15_132722) do
+ActiveRecord::Schema.define(version: 2019_11_17_133105) do
 
   create_table "rcases", force: :cascade do |t|
     t.string "rnumber"

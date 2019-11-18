@@ -1,5 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
+  has_many :systemfailureshistory
+  accepts_nested_attributes_for :systemfailureshistory
+  
   before_save { email.downcase! }
   has_secure_password
   validates :uid,  presence: true, length: { maximum: 30 },

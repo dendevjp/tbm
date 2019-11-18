@@ -2,10 +2,10 @@
       <%= render 'shared/systemfailure_error_messages' %>
 
       <%= f.label :障害番号 %>
-      <%= f.text_field :systemfailure_number , class: 'form-control',disabled: true%>
+      <%= f.text_field :systemfailure_number , class: 'form-control',readonly: true%>
 
       <%= f.label :サブシステム %>
-      <%= f.text_field :subsystem_name, class: 'form-control' ,disabled: true%>
+      <%= f.text_field :subsystem_name, class: 'form-control' ,readonly: true%>
 
       <%= f.label :時点 %>
       <%= f.text_field :time , class: 'form-control'%>

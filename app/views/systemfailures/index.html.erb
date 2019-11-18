@@ -25,6 +25,14 @@ $(document).ready(function() {
            $(objid).click();
         });
 } );
+
+$(document).ready(function() { 
+  $( ".sample_select2" ).select2({
+    width: 600,
+    multiple: true
+   });
+});
+
 </script>
 
 <%= form_tag systemfailures_path, :method => 'get' do %>
@@ -32,6 +40,18 @@ $(document).ready(function() {
 <table border="1">
 <tr valign = "middle">
 <td><%= link_to "新規作成", new_systemfailure_path, class: "btn btn-primary btn-xm"  %></td></tr>
+
+<tr valign = "middle">
+<td>
+  <table><tr>
+   <td> <%= select_tag "selectuser", options_from_collection_for_select(@users, "name", "name"),{ class: 'sample_select2', multiple: true } %></td>
+   <td> <%= submit_tag "検索", class: "col-2 bg-primary h-50" %></td>
+  </tr></table>
+ </div>
+
+</td></tr>
+
+
 <tr><td>
 表示切替:<br>
 <a id = "col1" class="toggle-vis" data-column="1">障害番号</a>・
