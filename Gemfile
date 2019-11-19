@@ -38,6 +38,7 @@ gem 'jquery-rails',            '4.3.1'
 gem 'paranoia'                 
 gem 'select2-rails'
 gem 'faker'
+gem 'roo'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

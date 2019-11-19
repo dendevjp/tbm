@@ -1,6 +1,5 @@
 <% provide(:title, 'Config管理') %>
 <h1>Config管理</h1>
-
 <script type="text/javascript" class="init">
 $(document).ready(function() {
 	var table = $('#example').DataTable( {
@@ -34,71 +33,96 @@ $(document).ready(function() {
 });
 
 </script>
-
 <%= form_tag systemfailures_path, :method => 'get' do %>
-
 <table border="1">
-<tr valign = "middle">
-<td><%= link_to "新規作成", new_systemfailure_path, class: "btn btn-primary btn-xm"  %></td></tr>
-
-<tr valign = "middle">
-<td>
-  <table><tr>
-   <td> <%= select_tag "selectuser", options_from_collection_for_select(@users, "name", "name"),{ class: 'sample_select2', multiple: true } %></td>
-   <td> <%= submit_tag "検索", class: "col-2 bg-primary h-50" %></td>
-  </tr></table>
- </div>
-
-</td></tr>
-
-
-<tr><td>
-表示切替:<br>
-<a id = "col1" class="toggle-vis" data-column="1">障害番号</a>・
-<a id = "col2" class="toggle-vis" data-column="2">サブシステム</a>・
-<a id = "col3" class="toggle-vis" data-column="3">時点</a>・
-<a id = "col4" class="toggle-vis" data-column="4">発生日時</a>・
-<a id = "col5" class="toggle-vis" data-column="5">表題</a>・
-<a id = "col6" class="toggle-vis" data-column="6">部署</a>・
-<a id = "col7" class="toggle-vis" data-column="7">報告者</a>・
-<a id = "col8" class="toggle-vis" data-column="8">記入期限</a>・
-<a id = "col9" class="toggle-vis" data-column="9">確定期限</a>・
-<a id = "col10" class="toggle-vis" data-column="10">経過日数</a>・
-<a id = "col11" class="toggle-vis" data-column="11">シグナル</a>・
-<a id = "co112" class="toggle-vis" data-column="12">ステータス</a>・
-<a id = "col13" class="toggle-vis" data-column="13">早川さんコメント欄</a>・
-<a id = "col14" class="toggle-vis" data-column="14">担当コメント欄</a><br>
-<a id = "col15" class="toggle-vis" data-column="15">やりとりステータス</a>・
-<a id = "col16" class="toggle-vis" data-column="16">早川さんにご覧いただき</a>・
-<a id = "col17" class="toggle-vis" data-column="17">報告書保存先</a>・
-<a id = "col18" class="toggle-vis" data-column="18">フォローアップ欄</a>・
-<a id = "col19" class="toggle-vis" data-column="19">エビデンス提出</a>・
-<a id = "col20" class="toggle-vis" data-column="20">その他全体チェック</a>・
-<a id = "col21" class="toggle-vis" data-column="21">品質管理用ステータス</a>・
-<a id = "col22" class="toggle-vis" data-column="22">恒久実施予定日</a>・
-<a id = "col23" class="toggle-vis" data-column="23">再発防止予定日</a>
-</td>
-</tr>
-<tr>
-<td>
-<div class="pjbox">
-<table id="example" class="display" >
-<thead>
-<tr>
-<th>更新</th><th nowrap>障害番号</th><th nowrap>サブシステム</th><th nowrap>時点</th><th nowrap>発生日時</th><th nowrap>表題</th><th nowrap>部署</th>
-<th nowrap>報告者</th><th nowrap>記入期限</th><th nowrap>確定期限</th><th nowrap>経過日数</th><th nowrap>シグナル</th><th nowrap>ステータス</th>
-<th nowrap>早川さんコメント欄</th><th nowrap>担当コメント欄</th><th nowrap>やりとりステータス</th><th>早川さんにご覧いただき</th><th nowrap>報告書保存先</th><th nowrap>フォローアップ欄</th>
-<th nowrap>エビデンス提出</th><th nowrap>その他全体チェック</th><th nowrap>品質管理用<br>ステータス</th><th nowrap>発生年月</th><th>恒久実施予定日</th><th nowrap>再発防止予定日</th>
-
-</tr>
-</thead>
-<tbody>
-    <%= render @systemfailures %>
+  <tr valign = "middle">
+    <td>
+      <%= link_to "新規作成", new_systemfailure_path, class: "btn btn-primary btn-xm"  %>
+    </td>
+  </tr>
+  <tr valign = "middle">
+    <td>
+      <table>
+        <tr>
+          <td>
+            <%= select_tag "selectuser", options_from_collection_for_select(@users, "name", "name"),{ class: 'sample_select2', multiple: true } %>
+          </td>
+          <td>
+            <%= submit_tag "検索", class: "col-2 bg-primary h-50" %>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>表示切替:
+      <br>
+      <a id = "col1" class="toggle-vis" data-column="1">障害番号</a>・
+      <a id = "col2" class="toggle-vis" data-column="2">サブシステム</a>・
+      <a id = "col3" class="toggle-vis" data-column="3">時点</a>・
+      <a id = "col4" class="toggle-vis" data-column="4">発生日時</a>・
+      <a id = "col5" class="toggle-vis" data-column="5">表題</a>・
+      <a id = "col6" class="toggle-vis" data-column="6">部署</a>・
+      <a id = "col7" class="toggle-vis" data-column="7">報告者</a>・
+      <a id = "col8" class="toggle-vis" data-column="8">記入期限</a>・
+      <a id = "col9" class="toggle-vis" data-column="9">確定期限</a>・
+      <a id = "col10" class="toggle-vis" data-column="10">経過日数</a>・
+      <a id = "col11" class="toggle-vis" data-column="11">シグナル</a>・
+      <a id = "co112" class="toggle-vis" data-column="12">ステータス</a>・
+      <a id = "col13" class="toggle-vis" data-column="13">早川さんコメント欄</a>・
+      <a id = "col14" class="toggle-vis" data-column="14">担当コメント欄</a>
+      <br>
+      <a id = "col15" class="toggle-vis" data-column="15">やりとりステータス</a>・
+      <a id = "col16" class="toggle-vis" data-column="16">早川さんにご覧いただき</a>・
+      <a id = "col17" class="toggle-vis" data-column="17">報告書保存先</a>・
+      <a id = "col18" class="toggle-vis" data-column="18">フォローアップ欄</a>・
+      <a id = "col19" class="toggle-vis" data-column="19">エビデンス提出</a>・
+      <a id = "col20" class="toggle-vis" data-column="20">その他全体チェック</a>・
+      <a id = "col21" class="toggle-vis" data-column="21">品質管理用ステータス</a>・
+      <a id = "col22" class="toggle-vis" data-column="22">恒久実施予定日</a>・
+      <a id = "col23" class="toggle-vis" data-column="23">再発防止予定日</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="pjbox">
+      <table id="example" class="display" >
+        <thead>
+          <tr>
+            <th>更新</th>
+            <th nowrap>障害番号</th>
+            <th nowrap>サブシステム</th>
+            <th nowrap>時点</th>
+            <th nowrap>発生日時</th>
+            <th nowrap>表題</th>
+            <th nowrap>部署</th>
+            <th nowrap>報告者</th>
+            <th nowrap>記入期限</th>
+            <th nowrap>確定期限</th>
+            <th nowrap>経過日数</th>
+            <th nowrap>シグナル</th>
+            <th nowrap>ステータス</th>
+            <th nowrap>早川さんコメント欄</th>
+            <th nowrap>担当コメント欄</th>
+            <th nowrap>やりとりステータス</th>
+            <th>早川さんにご覧いただき</th>
+            <th nowrap>報告書保存先</th>
+            <th nowrap>フォローアップ欄</th>
+            <th nowrap>エビデンス提出</th>
+            <th nowrap>その他全体チェック</th>
+            <th nowrap>品質管理用
+              <br>ステータス
+            </th>
+            <th nowrap>発生年月</th>
+            <th>恒久実施予定日</th>
+            <th nowrap>再発防止予定日</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @systemfailures %>
         </tbody>
-
-<div>
+      </table>
+    </td>
+  </tr>
 </table>
-</td></tr></table>
-
 <% end %>
-

@@ -1,0 +1,8 @@
+<% provide(:title, "Configアップロード") %>
+<% provide(:button_text, 'インポート') %>
+<h1>configをアップロード</h1>
+
+<%= form_tag import_systemfailures_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "インポート" %>
+<% end %>

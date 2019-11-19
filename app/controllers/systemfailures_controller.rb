@@ -55,6 +55,12 @@ class SystemfailuresController < ApplicationController
     redirect_to users_url
   end
 
+  def import
+    # fileはtmpに自動で一時保存される
+    Systemfailure.import(params[:file])
+    redirect_to systemfailures_path
+  end
+
   private
 
     # 管理者かどうか確認

@@ -3,22 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/stylesheets/jquery.dataTables.min.css</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/user.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/users/index.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/systemfailure.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/_systemfailure.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/edit.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/db/migrate/20191117115815_systemfailureshistory.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/systemfailureshistory.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/rconfig.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/_form.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/db/migrate/20191115132722_create_systemfailures.rb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/systemfailureupload.html.erb</file>
             <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/index.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/systemfailure.rb</file>
             <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/controllers/systemfailures_controller.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/db/migrate/20191117133105_rocords.rb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/new.html.erb</file>
-            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/assets/javascripts/jquery.dataTables.min.js</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/systemfailures/_systemfailure.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/views/layouts/_header.html.erb</file>
+            <file>file:/C:/MyFoulder/Learn/ruby/rails/tbm/app/models/systemfailureshistory.rb</file>
         </group>
     </open-files>
 </project-private>

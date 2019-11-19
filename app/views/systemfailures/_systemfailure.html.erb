@@ -8,9 +8,9 @@
 <td><%= systemfailure.title %></td>
 <td><%= systemfailure.department %></td>
 <td><%= systemfailure.reporter %></td>
-<td><%= systemfailure.update_deadline.strftime('%Y/%m/%d') %></td>
-<td><%= systemfailure.confirm_deadline.strftime('%Y/%m/%d') %></td>
-<td><%= ((Date.today - Date.parse(systemfailure.occur_date.to_s)).to_i).to_s + "日" %></td>
+<td><%= systemfailure.update_deadline ? systemfailure.update_deadline.strftime('%Y/%m/%d') : "" %></td>
+<td><%= systemfailure.confirm_deadline ? systemfailure.confirm_deadline.strftime('%Y/%m/%d') : "" %></td>
+<td><%= systemfailure.occur_date ? ((Date.today - Date.parse(systemfailure.occur_date.to_s)).to_i).to_s + "日" : "" %></td>
 
 <td><%= systemfailure.signal %></td>
 <td><%= systemfailure.status %></td>
@@ -24,7 +24,7 @@
 <td><%= systemfailure.overall_check %></td>
 <td><%= systemfailure.quality_status %></td>
 <td><%= systemfailure.occurrence_year + "/" + systemfailure.occurrence_month %></td>
-<td><%= systemfailure.permanent_planday.strftime('%Y/%m/%d') %></td>
-<td><%= systemfailure.recurrence_Preventday.strftime('%Y/%m/%d') %></td>
+<td><%= systemfailure.permanent_planday ? systemfailure.permanent_planday.strftime('%Y/%m/%d') : "" %></td>
+<td><%= systemfailure.recurrence_Preventday ? systemfailure.recurrence_Preventday.strftime('%Y/%m/%d') : "" %></td>
 
 </tr>
